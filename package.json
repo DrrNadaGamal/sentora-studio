@@ -1,0 +1,1 @@
+{"name":"sentora-studio","version":"1.0.0","private":true,"type":"module","description":"Sentora Studio - bilingual service-studio website","dependencies":{"@vercel/blob":"^2.9.0"}}
