@@ -105,3 +105,4 @@ a{color:inherit}img{max-width:100%;display:block}
  .grid.works,.plans,.steps,.row2{grid-template-columns:1fr}body{font-size:16px}.hero-art{display:none}.intake{box-shadow:4px 4px 0 var(--ink)}[dir=rtl] .intake{box-shadow:-4px 4px 0 var(--ink)}.plan-d{min-height:0}
 }
 h1 em{white-space:nowrap}
+.mailcard .mt{font-size:1.4rem;margin-bottom:14px}.mailcard .btn{width:100%}.mailcard .note{text-align:center}

@@ -27,18 +27,9 @@ const card = w => `<article class="card work-card" data-cat="${w.cat}">
  <div class="tags">${w.tags.map(k=>`<span class="tag" ${a(k)}>${t(k)}</span>`).join('')}</div>
  <div class="links">${w.demo?`<a class="link" href="${w.demo}" target="_blank" rel="noopener"><span ${a('work.demo')}>${t('work.demo')}</span> ↗</a>`:''}${w.code?`<a class="link" href="${w.code}" target="_blank" rel="noopener"><span ${a('work.code')}>${t('work.code')}</span> ↗</a>`:''}</div></div></article>`;
 
-const form = (id) => `<form class="intake" id="${id}" novalidate>
- <label class="lbl" for="${id}-idea" ${a('form.idea')}>${t('form.idea')}</label>
- <textarea id="${id}-idea" name="idea" rows="3" maxlength="600" required placeholder="${t('form.ideaPh')}" data-i18n-ph="form.ideaPh"></textarea>
- <div class="row2">
-  <div><label class="lbl" for="${id}-name" ${a('form.name')}>${t('form.name')}</label><input id="${id}-name" name="name" type="text" maxlength="80" autocomplete="name" placeholder="${t('form.namePh')}" data-i18n-ph="form.namePh"></div>
-  <div><label class="lbl" for="${id}-contact" ${a('form.contact')}>${t('form.contact')}</label><input id="${id}-contact" name="contact" type="text" maxlength="120" required autocomplete="email" placeholder="${t('form.contactPh')}" data-i18n-ph="form.contactPh" dir="ltr"></div>
- </div>
- <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
- <button class="btn btn-primary btn-lg" type="submit"><span ${a('form.submit')}>${t('form.submit')}</span><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h11M10 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
- <p class="note" ${a('form.note')}>${t('form.note')}</p>
- <div class="msg" role="status" aria-live="polite"></div>
-</form>`;
+const form = (id) => `<div class="intake mailcard" id="${id}"><h2 class="mt" ${a('mail.title')}>${t('mail.title')}</h2>
+ <a class="btn btn-primary btn-lg" href="mailto:nadagamal8510@gmail.com?subject=Sentora%20Studio%20project%20idea" ${a('mail.btn')}>${t('mail.btn')}</a>
+ <p class="note">nadagamal8510@gmail.com</p><p class="note" ${a('mail.note')}>${t('mail.note')}</p></div>`;
 
 const pricing = (full=false) => {
  const plans = [
