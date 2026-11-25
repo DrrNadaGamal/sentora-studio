@@ -42,7 +42,7 @@ const form = (id) => `<form class="intake" id="${id}" novalidate>
 
 const pricing = (full=false) => {
  const plans = [
-  {k:'p1',price:'$180'},{k:'p2',price:'$450',hot:1},{k:'p3',price:'$900'}];
+  {k:'p1',price:'$120'},{k:'p2',price:'$300',hot:1},{k:'p3',price:'$600'}];
  return `<div class="plans">${plans.map(p=>`<article class="card plan${p.hot?' hot':''}">
  ${p.hot?`<span class="badge hotb" ${a('p2.badge')}>${t('p2.badge')}</span>`:''}
  <h3 ${a(p.k+'.n')}>${t(p.k+'.n')}</h3>
